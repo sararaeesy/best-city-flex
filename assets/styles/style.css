@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam.eot');
+    src: url('../fonts/shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shabnam/Shabnam.woff2') format('woff2'),
+         url('../fonts/shabnam/Shabnam.woff') format('woff'),
+         url('../fonts/shabnam/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam-Bold.eot');
+    src: url('../fonts/shabnam/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shabnam/Shabnam-Bold.woff2') format('woff2'),
+         url('../fonts/shabnam/Shabnam-Bold.woff') format('woff'),
+         url('../fonts/shabnam/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam-Thin.eot');
+    src: url('../fonts/shabnam/Shabnam-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shabnam/Shabnam-Thin.woff2') format('woff2'),
+         url('../fonts/shabnam/Shabnam-Thin.woff') format('woff'),
+         url('../fonts/shabnam/Shabnam-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam-Light.eot');
+    src: url('../fonts/shabnam/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shabnam/Shabnam-Light.woff2') format('woff2'),
+         url('../fonts/shabnam/Shabnam-Light.woff') format('woff'),
+         url('../fonts/shabnam/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam-Medium.eot');
+    src: url('../fonts/shabnam/Shabnam-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shabnam/Shabnam-Medium.woff2') format('woff2'),
+         url('../fonts/shabnam/Shabnam-Medium.woff') format('woff'),
+         url('./.assets/fonts/shabnam/Shabnam-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  body{
+    direction: rtl;
+    margin: 0;
+    font-family: Shabnam;
+    font-weight: 100;
+}
+ol,ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+*,*:after,*.before{
+    box-sizing:border-box;
+}
+
+/* HEADER */
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #fff;
+    z-index:2;
+    padding: 20px 0;
+  }
+.header .flexHeader{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.header .flexHeader .logo a{
+  color: #093a58;
+}
+.header .menu .flexMenu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap:20px;
+}
+.header .menu ul.flexMenu li a{
+padding: 0 5px;
+color: #3acec2;
+font-weight:300;
+  }
+  .header .flexHeader .menu ul.flexMenu li img{
+    width: 15px;
+    height:auto;
+    vertical-align: middle;
+  }
+  .header .menu ul.flexMenu li a:hover{
+    color: #3a3a3a;
+    transition:color 3s;
+}
+/*HEROSECTION*/
+.heroSection{
+  background-color:#3acec2 ;
+  padding-top: 130px;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 45px;
+ }
+ .heroSection .flexHero{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+ }
+.heroSection img{
+  width:190px;
+  height:auto;
+}
+.heroSection h3,p{
+  margin-bottom: 0;
+}
+/*CONTENT*/
+.content{
+  margin:30px 0;
+  line-height: 1.5;
+}
+.content .flexContent{
+  display: flex;
+  justify-content:space-between;
+  gap: 20px;
+}
+.content .column.columnRight , .column.columnLeft{
+  width: 30%;
+}
+.content .column.columnCentre{
+  width:40%;
+}
+.content .column.columnCentre .figure{
+  width:100%;
+  position:relative;
+}
+.content .column.columnCentre .figure img{
+  width:100%;
+  height:auto;
+}
+.content .column.columnCentre .figure .figCaption{
+position:absolute;
+bottom:0;
+background-color: rgba(19, 43, 102, .85);
+color:#fff;
+width:100%;
+padding: 5px 10px;
+}
+.content .column.columnLeft{
+h4{
+  display:inline-block;
+}
+}
+/*ّFOOTER*/
+.footer{
+  text-align: center;
+  background-color: #d9e4ea;
+  color: #3a3a3a;
+  padding:30px 0;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/*RESPONSIVE MODE*/
+@media (max-width:1200px){
+  .container{
+    width:100%;
+  }
+  .header .flexHeader .logo{
+    padding: 0px 30px;
+  }
+  .header .menu ul li{
+    padding:0 20px;
+  }
+}
+@media (max-width:1020px){
+  .container{
+    width:100%;
+  }
+  .content .flexContent .column:nth-child(1) , .content .flexContent .column:nth-child(3){
+    padding: 0 30px;
+    width:50%;
+  }
+  .content .flexContent .column:nth-child(2){
+    width: 100%;
+  }
+}
+@media (max-width:700px){
+.container{
+  width: 100%;
+}
+.header .container .flexHeader{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content .flexContent{
+  flex-wrap: wrap;
+}
+.content .flexContent .column:nth-child(1) ,.content .flexContent .column:nth-child(2), .content .flexContent .column:nth-child(3){
+  padding: 0 30px;
+  width: 100%;
+}
+}
